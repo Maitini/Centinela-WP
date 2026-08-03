@@ -287,7 +287,7 @@ Esta ronda de mejoras añadió seguridad de segunda capa y andamiaje de calidad.
 
 ## Licencia
 
-Ver [`LICENSE.txt`](LICENSE.txt). Uso gratuito, sin reventa ni redistribución o modificación por terceros. Las sugerencias de mejora son bienvenidas por la pestaña Issues.
+Uso gratuito, sin reventa ni redistribución o modificación por terceros. Las sugerencias de mejora son bienvenidas por la pestaña Issues.
 
 <img src="separador.svg" width="100%" alt="">
 
