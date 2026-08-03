@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 280" width="100%" role="img" aria-labelledby="tf">
+<title id="tf">Recorrido de una petición: pasa el cortafuegos, el login endurecido y el doble factor antes de llegar a WordPress</title>
+
+<defs>
+<path id="ruta" d="M126 115 H1036" fill="none"/>
+<marker id="flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+  <path d="M2 1L8 5L2 9" fill="none" stroke="#2A2A3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<style>
+.m{font-family:ui-monospace,'Cascadia Mono',Consolas,'DejaVu Sans Mono',monospace}
+.caja{fill:#12121C;stroke:#2A2A3A;stroke-width:1}
+.tit{font-size:13px;fill:#F2F0FF}
+.sub{font-size:11px;fill:#6A6A85}
+</style>
+
+<rect width="1200" height="280" rx="20" fill="#07070C"/>
+
+<g stroke="#2A2A3A" stroke-width="1">
+<line x1="192" y1="115" x2="238" y2="115" marker-end="url(#flecha)"/>
+<line x1="422" y1="115" x2="468" y2="115" marker-end="url(#flecha)"/>
+<line x1="652" y1="115" x2="698" y2="115" marker-end="url(#flecha)"/>
+<line x1="882" y1="115" x2="928" y2="115" marker-end="url(#flecha)"/>
+</g>
+
+<g class="caja">
+<rect x="60" y="72" width="132" height="86" rx="12"/>
+<rect x="242" y="72" width="180" height="86" rx="12" stroke="#B026FF"/>
+<rect x="472" y="72" width="180" height="86" rx="12" stroke="#B026FF"/>
+<rect x="702" y="72" width="180" height="86" rx="12" stroke="#B026FF"/>
+<rect x="932" y="72" width="208" height="86" rx="12" stroke="#00E5FF"/>
+</g>
+
+<text class="m tit" x="126" y="112" text-anchor="middle">petición</text>
+<text class="m sub" x="126" y="132" text-anchor="middle">alguien entra</text>
+
+<text class="m tit" x="332" y="105" text-anchor="middle">cortafuegos</text>
+<text class="m sub" x="332" y="124" text-anchor="middle">listas, nodos Tor</text>
+<text class="m sub" x="332" y="140" text-anchor="middle">y reputación de IP</text>
+
+<text class="m tit" x="562" y="105" text-anchor="middle">login endurecido</text>
+<text class="m sub" x="562" y="124" text-anchor="middle">URL oculta, honeypot</text>
+<text class="m sub" x="562" y="140" text-anchor="middle">y límite de intentos</text>
+
+<text class="m tit" x="792" y="105" text-anchor="middle">doble factor</text>
+<text class="m sub" x="792" y="124" text-anchor="middle">TOTP o email,</text>
+<text class="m sub" x="792" y="140" text-anchor="middle">verificado antes de activar</text>
+
+<text class="m tit" x="1036" y="105" text-anchor="middle">WordPress</text>
+<text class="m sub" x="1036" y="124" text-anchor="middle">recibe solo lo que</text>
+<text class="m sub" x="1036" y="140" text-anchor="middle">ha pasado los filtros</text>
+
+<circle r="5" fill="#00E5FF">
+  <animateMotion dur="5s" repeatCount="indefinite"><mpath xlink:href="#ruta"/></animateMotion>
+</circle>
+
+<text class="m" x="600" y="212" text-anchor="middle" font-size="11.5" fill="#4E4E63">en paralelo, el antivirus vigila los archivos y la integridad del núcleo</text>
+<text class="m" x="600" y="234" text-anchor="middle" font-size="11.5" fill="#4E4E63">y todo lo que se bloquea queda registrado, con copia de seguridad para volver atrás</text>
+</svg>
